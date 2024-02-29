@@ -4,7 +4,9 @@ body {
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
-
+.data{
+    display: inline-flex;
+}
 .container,
 .places {
     text-align: center;
@@ -21,4 +23,18 @@ body {
     border: 2px solid black;
     background-color: #fff;
     color: #000;
+}
+.places{
+    margin-bottom: -20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .data{
+       display: grid;
+       align-items: center;
+       justify-content: center;
+    }
+    .places{
+        display: inline-block;
+    }
 }
